@@ -22,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+Idolmaster.find(:cinderella_girls).count
+=> 190
+
+Idolmaster.find(:cinderella_girls).first
+=> [{:id=>1, :name=>"相川千夏", :kana=>"あいかわちなつ", :height=>"161cm", :weight=>"43kg", :size=>"82/56/85", :birth=>"11月11日", :age=>"23歳", :blood=>"B型", :type=>"cool", :from=>"北海道", :cv=>""}
+```
 
 ## Development
 
