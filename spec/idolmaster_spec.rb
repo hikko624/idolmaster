@@ -1,11 +1,9 @@
 require "spec_helper"
 
 RSpec.describe Idolmaster do
-  it "has a version number" do
-    expect(Idolmaster::VERSION).not_to be nil
-  end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+  describe "#find" do
+    it " cinderella_girls" do
+      expect(Idolmaster.find(:cinderella_girls).count).to eq 190
+    end
   end
 end
