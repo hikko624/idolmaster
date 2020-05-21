@@ -28,6 +28,8 @@ jobs:
       with:
         ruby-version: 2.6
     - name: Install dependencies
-      run: bin/setup
+      run: |
+        gem install bundler -v 1.17.2
+        bin/setup
     - name: Run tests
       run: bundle exec rspec
