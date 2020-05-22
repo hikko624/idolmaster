@@ -26,11 +26,8 @@ jobs:
     # uses: ruby/setup-ruby@v1
       uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
       with:
-        ruby-version: 2.6
+        ruby-version: 2.6.x
     - name: Install dependencies
-      run: |
-        gem uninstall bundler
-        gem install bundler -v 1.17.2
-        bundle install
+      run:  bundle install
     - name: Run tests
       run: bundle exec rspec
