@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-```
+```ruby
 Idolmaster.find(:cinderella_girls).count
 => 190
 
