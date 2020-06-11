@@ -9,8 +9,15 @@ module Idolmaster
       config[production_name]
     end
 
+    Dir.open("#{File.dirname(__FILE__)}/../config/idols/").each do |file|
+      next if file =~ /^\.+$/
+      name = File.basename(file, ".*").to_sym
+      define_method name do
+        Idolmaster.find(name)
+      end
+    end
+
     def config
-      # puts "__FILE__: #{__FILE__}"
       config = {}
       Dir.open("#{File.dirname(__FILE__)}/../config/idols/").each do |file|
         next if file =~ /^\.+$/
