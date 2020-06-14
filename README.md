@@ -42,6 +42,15 @@ Idolmaster.find(:original).first
 
 Idolmaster.original.first
 => {:id=>1, :name=>"天海春香", :kana=>"あまみはるか", :height=>"158", :weight=>"45", :bust=>"83", :waist=>"56", :hip=>"80", :birth=>"4月3日", :age=>"16", :blood=>"O", :from=>"神奈川県", :cv=>"中村繪里子"}
+
+Idolmaster.find(:shiny_colors).count
+=> 23
+
+Idolmaster.find(:shiny_colors).first
+=> {:id=>1, :name=>"櫻木真乃", :kana=>"さくらぎまの", :height=>"155", :weight=>"48", :bust=>"86", :waist=>"58", :hip=>"88", :birth=>"4月25日", :age=>"16", :blood=>"A", :from=>"東京", :unit=>"イルミネーションスターズ", :cv=>"関根瞳"}
+
+Idolmaster.shiny_colors.first
+=> {:id=>1, :name=>"櫻木真乃", :kana=>"さくらぎまの", :height=>"155", :weight=>"48", :bust=>"86", :waist=>"58", :hip=>"88", :birth=>"4月25日", :age=>"16", :blood=>"A", :from=>"東京", :unit=>"イルミネーションスターズ", :cv=>"関根瞳"}
 ```
 
 ## Development

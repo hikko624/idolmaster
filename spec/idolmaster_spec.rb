@@ -10,6 +10,10 @@ RSpec.describe Idolmaster do
     it "origina; has 13 idols" do
       expect(Idolmaster.find(:original).count).to eq 13
     end
+
+    it "shiny_colors has 23 idols" do
+      expect(Idolmaster.find(:shiny_colors).count).to eq 23
+    end
   end
 
   describe "define_methods" do
@@ -19,6 +23,10 @@ RSpec.describe Idolmaster do
 
     it "original" do
       expect(Idolmaster.original).to eq (Idolmaster.find(:original))
+    end
+
+    it "shiny_colors" do
+      expect(Idolmaster.shiny_colors).to eq (Idolmaster.find(:shiny_colors))
     end
   end
 end
