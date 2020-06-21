@@ -4,7 +4,7 @@
 
 A reference for Idolmaster series.
 
-This gem is inspired by sue445/rubicure and imas/rubimas strongly.
+This gem is inspired by [sue445/rubicure](https://github.com/sue445/rubicure) and [imas/rubimas](https://github.com/imas/rubimas/) strongly.
 
 [Idolmaster Official Site](https://idolmaster.jp/about/)
 
