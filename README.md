@@ -2,9 +2,11 @@
 
 ![Ruby](https://github.com/hikko624/idolmaster/workflows/Ruby/badge.svg)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/idolmaster`. To experiment with that code, run `bin/console` for an interactive prompt.
+A reference for Idolmaster series.
 
-TODO: Delete this and the text above, and describe your gem
+This gem is inspired by sue445/rubicure and imas/rubimas strongly.
+
+[Idolmaster Official Site](https://idolmaster.jp/about/)
 
 ## Installation
 
@@ -67,7 +69,11 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/idolmaster. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+1. Fork it
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create new Pull Request
 
 ## License
 
