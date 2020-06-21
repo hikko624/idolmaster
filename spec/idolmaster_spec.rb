@@ -14,6 +14,10 @@ RSpec.describe Idolmaster do
     it "shiny_colors has 23 idols" do
       expect(Idolmaster.find(:shiny_colors).count).to eq 23
     end
+
+    it "side_m has 46 idols" do
+      expect(Idolmaster.find(:side_m).count).to eq 46
+    end
   end
 
   describe "define_methods" do
@@ -27,6 +31,10 @@ RSpec.describe Idolmaster do
 
     it "shiny_colors" do
       expect(Idolmaster.shiny_colors).to eq (Idolmaster.find(:shiny_colors))
+    end
+
+    it "side_m" do
+      expect(Idolmaster.side_m).to eq (Idolmaster.find(:side_m))
     end
   end
 end
