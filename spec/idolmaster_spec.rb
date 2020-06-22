@@ -2,39 +2,43 @@
 require "spec_helper"
 
 RSpec.describe Idolmaster do
-  describe "#find" do
+  describe "#Rubimas::Idol" do
     it "cinderella_girls has 190 idols" do
-      expect(Idolmaster.find(:cinderella_girls).count).to eq 190
+      expect(Rubimas::Idol.find(:cinderella_girls).count).to eq 190
     end
 
     it "origina; has 13 idols" do
-      expect(Idolmaster.find(:original).count).to eq 13
+      expect(Rubimas::Idol.find(:original).count).to eq 13
     end
 
     it "shiny_colors has 23 idols" do
-      expect(Idolmaster.find(:shiny_colors).count).to eq 23
+      expect(Rubimas::Idol.find(:shiny_colors).count).to eq 23
     end
 
     it "side_m has 46 idols" do
-      expect(Idolmaster.find(:side_m).count).to eq 46
+      expect(Rubimas::Idol.find(:side_m).count).to eq 46
     end
   end
 
   describe "define_methods" do
     it "cinderella_girls" do
-      expect(Idolmaster.cinderella_girls).to eq (Idolmaster.find(:cinderella_girls))
+      expect(Idolmaster.cinderella_girls).to eq (Rubimas::Idol.find(:cinderella_girls))
     end
 
     it "original" do
-      expect(Idolmaster.original).to eq (Idolmaster.find(:original))
+      expect(Idolmaster.original).to eq (Rubimas::Idol.find(:original))
     end
 
     it "shiny_colors" do
-      expect(Idolmaster.shiny_colors).to eq (Idolmaster.find(:shiny_colors))
+      expect(Idolmaster.shiny_colors).to eq (Rubimas::Idol.find(:shiny_colors))
     end
 
     it "side_m" do
-      expect(Idolmaster.side_m).to eq (Idolmaster.find(:side_m))
+      expect(Idolmaster.side_m).to eq (Rubimas::Idol.find(:side_m))
+    end
+
+    it "undefined_methods" do
+      expect { Idolmaster.undefined }.to raise_error(NoMethodError)
     end
   end
 end
