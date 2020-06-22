@@ -3,20 +3,28 @@ require "spec_helper"
 
 RSpec.describe Idolmaster do
   describe "#Rubimas::Idol" do
-    it "cinderella_girls has 190 idols" do
-      expect(Rubimas::Idol.find(:cinderella_girls).count).to eq 190
+    describe "#find" do
+      it "undefined series" do
+        expect { Rubimas::Idol.find(:undefined) }.to raise_error(RuntimeError)
+      end
     end
 
-    it "origina; has 13 idols" do
-      expect(Rubimas::Idol.find(:original).count).to eq 13
-    end
+    describe "Count Idols" do
+      it "cinderella_girls has 190 idols" do
+        expect(Rubimas::Idol.find(:cinderella_girls).count).to eq 190
+      end
 
-    it "shiny_colors has 23 idols" do
-      expect(Rubimas::Idol.find(:shiny_colors).count).to eq 23
-    end
+      it "origina; has 13 idols" do
+        expect(Rubimas::Idol.find(:original).count).to eq 13
+      end
 
-    it "side_m has 46 idols" do
-      expect(Rubimas::Idol.find(:side_m).count).to eq 46
+      it "shiny_colors has 23 idols" do
+        expect(Rubimas::Idol.find(:shiny_colors).count).to eq 23
+      end
+
+      it "side_m has 46 idols" do
+        expect(Rubimas::Idol.find(:side_m).count).to eq 46
+      end
     end
   end
 
