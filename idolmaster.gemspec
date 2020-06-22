@@ -37,4 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry-doc'
   spec.add_development_dependency 'hashie'
   spec.add_development_dependency 'method_source'
+  spec.add_development_dependency 'rubocop'
 end
