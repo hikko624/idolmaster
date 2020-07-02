@@ -38,6 +38,9 @@ Idolmaster.shiny_colors.first
 
 Idolmaster.side_m.first
 => {:id=>1, :name=>"天ヶ瀬冬馬", :kana=>"あまがせとうま", :height=>"175", :wight=>"57", :bust=>"81", :waist=>"65", :hip=>"80", :birth=>"3月3日", :age=>"17", :type=>"フィジカル", :shoes_size=>"25.5", :blood=>"B", :from=>"神奈川", :unit=>"Jupiter", :cv=>"寺島拓篤"}
+
+Idolmaster.million_live.first
+=> {:id=>"amami_haruka", :name=>"天海春香", :kana=>"あまみはるか", :height=>"158", :weight=>"46", :bust=>"83", :waist=>"56", :hip=>"82", :birth=>"4月3日", :age=>"17", :blood=>"O", :from=>"神奈川県", :type=>"Princess", :favorite=>["カラオケ", "長電話"], :cv=>"中村繪里子"}
 ```
 
 
@@ -53,13 +56,10 @@ Rubimas::Idol.find(:shiny_colors).first
 
 Rubimas::Idol.find(:side_m).first
 => {:id=>1, :name=>"天ヶ瀬冬馬", :kana=>"あまがせとうま", :height=>"175", :wight=>"57", :bust=>"81", :waist=>"65", :hip=>"80", :birth=>"3月3日", :age=>"17", :type=>"フィジカル", :shoes_size=>"25.5", :blood=>"B", :from=>"神奈川", :unit=>"Jupiter", :cv=>"寺島拓篤"}
+
+Rubimas::Idol.find(:million_live).first
+=> {:id=>"amami_haruka", :name=>"天海春香", :kana=>"あまみはるか", :height=>"158", :weight=>"46", :bust=>"83", :waist=>"56", :hip=>"82", :birth=>"4月3日", :age=>"17", :blood=>"O", :from=>"神奈川県", :type=>"Princess", :favorite=>["カラオケ", "長電話"], :cv=>"中村繪里子"}
 ```
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
@@ -75,4 +75,4 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## Code of Conduct
 
-Everyone interacting in the Idolmaster project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/idolmaster/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Idolmaster project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/hikko624/idolmaster/blob/master/CODE_OF_CONDUCT.md).

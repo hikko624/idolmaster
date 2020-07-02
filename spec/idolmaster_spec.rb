@@ -7,9 +7,7 @@ RSpec.describe Idolmaster do
       it "undefined series" do
         expect { Rubimas::Idol.find(:undefined) }.to raise_error(RuntimeError)
       end
-    end
 
-    describe "Count Idols" do
       it "cinderella_girls has 190 idols" do
         expect(Rubimas::Idol.find(:cinderella_girls).count).to eq 190
       end
@@ -24,6 +22,10 @@ RSpec.describe Idolmaster do
 
       it "side_m has 46 idols" do
         expect(Rubimas::Idol.find(:side_m).count).to eq 46
+      end
+
+      it "million_live has 53 idols" do
+        expect(Rubimas::Idol.find(:million_live).count).to eq 53
       end
     end
   end
@@ -43,6 +45,10 @@ RSpec.describe Idolmaster do
 
     it "side_m" do
       expect(Idolmaster.side_m).to eq (Rubimas::Idol.find(:side_m))
+    end
+
+    it "million_live" do
+      expect(Idolmaster.million_live).to eq (Rubimas::Idol.find(:million_live))
     end
 
     it "undefined_methods" do
