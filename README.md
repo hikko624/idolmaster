@@ -2,7 +2,7 @@
 
 ![Ruby](https://github.com/hikko624/idolmaster/workflows/Ruby/badge.svg)
 
-A reference for Idolmaster series.
+A reference for Idolmaster all series.
 
 This gem is inspired by [sue445/rubicure](https://github.com/sue445/rubicure) and [imas/rubimas](https://github.com/imas/rubimas/) strongly.
 
@@ -27,37 +27,42 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-Idolmaster.cinderella_girls.first
-=> [{:id=>1, :name=>"相川千夏", :kana=>"あいかわちなつ", :height=>"161cm", :weight=>"43kg", :size=>"82/56/85", :birth=>"11月11日", :age=>"23歳", :blood=>"B型", :type=>"cool", :from=>"北海道", :cv=>""}
+Idolmaster.cinderella_girls[77]
+=> {:id=>78, :name=>"佐藤心", :kana=>"さとうしん", :height=>"166cm", :weight=>"ﾀﾞｲｴｯﾄちゅう", :size=>"ぼんっ/きゅっ/ぼんっ♪", :birth=>"7月22日", :age=>"26歳", :blood=>"AB型", :type=>"passion", :from=>"長野", :cv=>"花守ゆみり"}
 
-Idolmaster.original.first
+Idolmaster.cinderella_girls[77][:name]
+=> "佐藤心"
+
+Idolmaster.cinderella_girls[77][:size]
+=> "ぼんっ/きゅっ/ぼんっ♪"
+
+Idolmaster.original[0]
 => {:id=>1, :name=>"天海春香", :kana=>"あまみはるか", :height=>"158", :weight=>"45", :bust=>"83", :waist=>"56", :hip=>"80", :birth=>"4月3日", :age=>"16", :blood=>"O", :from=>"神奈川県", :cv=>"中村繪里子"}
 
-Idolmaster.shiny_colors.first
+Idolmaster.shiny_colors[0]
 => {:id=>1, :name=>"櫻木真乃", :kana=>"さくらぎまの", :height=>"155", :weight=>"48", :bust=>"86", :waist=>"58", :hip=>"88", :birth=>"4月25日", :age=>"16", :blood=>"A", :from=>"東京", :unit=>"イルミネーションスターズ", :cv=>"関根瞳"}
 
-Idolmaster.side_m.first
+Idolmaster.side_m[0]
 => {:id=>1, :name=>"天ヶ瀬冬馬", :kana=>"あまがせとうま", :height=>"175", :wight=>"57", :bust=>"81", :waist=>"65", :hip=>"80", :birth=>"3月3日", :age=>"17", :type=>"フィジカル", :shoes_size=>"25.5", :blood=>"B", :from=>"神奈川", :unit=>"Jupiter", :cv=>"寺島拓篤"}
 
-Idolmaster.million_live.first
+Idolmaster.million_live[0]
 => {:id=>"amami_haruka", :name=>"天海春香", :kana=>"あまみはるか", :height=>"158", :weight=>"46", :bust=>"83", :waist=>"56", :hip=>"82", :birth=>"4月3日", :age=>"17", :blood=>"O", :from=>"神奈川県", :type=>"Princess", :favorite=>["カラオケ", "長電話"], :cv=>"中村繪里子"}
 ```
 
-
 ```ruby
-Rubimas::Idol.find(:cinderella_girls).first
-=> [{:id=>1, :name=>"相川千夏", :kana=>"あいかわちなつ", :height=>"161cm", :weight=>"43kg", :size=>"82/56/85", :birth=>"11月11日", :age=>"23歳", :blood=>"B型", :type=>"cool", :from=>"北海道", :cv=>""}
+Rubimas::Idol.find(:cinderella_girls)[77]
+=> {:id=>78, :name=>"佐藤心", :kana=>"さとうしん", :height=>"166cm", :weight=>"ﾀﾞｲｴｯﾄちゅう", :size=>"ぼんっ/きゅっ/ぼんっ♪", :birth=>"7月22日", :age=>"26歳", :blood=>"AB型", :type=>"passion", :from=>"長野", :cv=>"花守ゆみり"}
 
-Rubimas::Idol.find(:original).first
+Rubimas::Idol.find(:original)[0]
 => {:id=>1, :name=>"天海春香", :kana=>"あまみはるか", :height=>"158", :weight=>"45", :bust=>"83", :waist=>"56", :hip=>"80", :birth=>"4月3日", :age=>"16", :blood=>"O", :from=>"神奈川県", :cv=>"中村繪里子"}
 
-Rubimas::Idol.find(:shiny_colors).first
+Rubimas::Idol.find(:shiny_colors)[0]
 => {:id=>1, :name=>"櫻木真乃", :kana=>"さくらぎまの", :height=>"155", :weight=>"48", :bust=>"86", :waist=>"58", :hip=>"88", :birth=>"4月25日", :age=>"16", :blood=>"A", :from=>"東京", :unit=>"イルミネーションスターズ", :cv=>"関根瞳"}
 
-Rubimas::Idol.find(:side_m).first
+Rubimas::Idol.find(:side_m)[0]
 => {:id=>1, :name=>"天ヶ瀬冬馬", :kana=>"あまがせとうま", :height=>"175", :wight=>"57", :bust=>"81", :waist=>"65", :hip=>"80", :birth=>"3月3日", :age=>"17", :type=>"フィジカル", :shoes_size=>"25.5", :blood=>"B", :from=>"神奈川", :unit=>"Jupiter", :cv=>"寺島拓篤"}
 
-Rubimas::Idol.find(:million_live).first
+Rubimas::Idol.find(:million_live)[0]
 => {:id=>"amami_haruka", :name=>"天海春香", :kana=>"あまみはるか", :height=>"158", :weight=>"46", :bust=>"83", :waist=>"56", :hip=>"82", :birth=>"4月3日", :age=>"17", :blood=>"O", :from=>"神奈川県", :type=>"Princess", :favorite=>["カラオケ", "長電話"], :cv=>"中村繪里子"}
 ```
 
