@@ -29,7 +29,3 @@ jobs:
       run:  bundle install
     - name: Run tests
       run: bundle exec rspec
-    - name: Codecov
-      uses: codecov/codecov-action@v1.0.10
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
