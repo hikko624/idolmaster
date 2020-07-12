@@ -3,6 +3,11 @@ require "bundler/setup"
 require 'simplecov'
 SimpleCov.start
 
+if ENV["COVERALLS_REPO_TOKEN"]
+  require 'coveralls'
+  Coveralls.wear!
+end
+
 require "idolmaster"
 
 RSpec.configure do |config|
