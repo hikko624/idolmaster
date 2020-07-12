@@ -1,6 +1,8 @@
 require "bundler/setup"
 require 'simplecov'
 SimpleCov.start
+require 'codecov'
+SimpleCov.formatter = SimpleCov::Formatter::Codecov
 require "idolmaster"
 
 RSpec.configure do |config|
