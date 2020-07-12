@@ -3,6 +3,9 @@ require "bundler/setup"
 require 'simplecov'
 SimpleCov.start
 
+require 'coveralls'
+Coveralls.wear!
+
 require "idolmaster"
 
 RSpec.configure do |config|
