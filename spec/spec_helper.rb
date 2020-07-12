@@ -1,11 +1,7 @@
 require "bundler/setup"
 
-if ENV["CI"]
-  require 'simplecov'
-  SimpleCov.start
-  require 'codecov'
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
-end
+require 'simplecov'
+SimpleCov.start
 
 require "idolmaster"
 
