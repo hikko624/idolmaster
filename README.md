@@ -1,6 +1,7 @@
 # Idolmaster
 
 ![Ruby](https://github.com/hikko624/idolmaster/workflows/Ruby/badge.svg)
+[![codecov](https://codecov.io/gh/hikko624/idolmaster/branch/master/graph/badge.svg)](https://codecov.io/gh/hikko624/idolmaster)
 
 A reference for Idolmaster all series.
 
